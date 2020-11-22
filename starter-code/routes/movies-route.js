@@ -10,7 +10,7 @@ router.get("/movies/add", (req, res, next) => {
 
 router.post("/movies/add", (req, res, next) => {
   let { title, genre, plot } = req.body;
-  Movies.create({ title, genre, plot })
+  Movie.create({ title, genre, plot })
     .then(() => {
       console.log("Creating a movie");
       res.redirect('/celebrities')
@@ -58,10 +58,10 @@ router.post("/movies/:id/edit", (req, res, next) => {
     });
 });
 
-router.post('/movies/:id/delete', (req, res) => {
+router.post('/celebrities/:id/delete', (req, res) => {
   const { id } = req.params;
   Movie.findByIdAndDelete(id)
-    .then(() => res.redirect('/movies'))
+    .then(() => res.redirect('/celebrities'))
     .catch(error => console.log(`Error while deleting a movie: ${error}`));
 });
 

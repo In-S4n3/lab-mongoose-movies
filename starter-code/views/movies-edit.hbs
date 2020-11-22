@@ -1,0 +1,21 @@
+<h1>Edit</h1>
+
+<form action="/movies/{{_id}}/edit" method="POST">
+  <label>
+    Title
+    <input type="text" name="title" value="{{title}}">
+  </label>
+   <label>
+    Genre
+    <input type="text" name="genre" value="{{genre}}">
+  </label>
+  <label>
+    Plot
+    <input name="plot" value="{{plot}}">
+  </label>
+  
+  <button class="btn btn-success" type="submit">Submit</button>
+</form>
+
+<br>
+<a class="btn btn-primary btn-sm" href="/celebrities">back</a>
