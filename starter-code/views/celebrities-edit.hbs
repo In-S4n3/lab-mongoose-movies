@@ -1,0 +1,21 @@
+<h1>Edit</h1>
+
+<form action="/celebrities/{{_id}}/edit" method="POST">
+  <label>
+    Name
+    <input type="text" name="name" value="{{name}}">
+  </label>
+   <label>
+    Occupation
+    <input type="text" name="occupation" value="{{occupation}}">
+  </label>
+  <label>
+    Catch Phrase
+    <input name="catchPhrase" value="{{catchPhrase}}">
+  </label>
+  
+  <button class="btn btn-success" type="submit">Submit</button>
+</form>
+
+<br>
+<a class="btn btn-primary btn-sm" href="/celebrities">back</a>
