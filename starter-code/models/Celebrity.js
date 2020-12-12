@@ -4,10 +4,7 @@ const { Schema, model } = mongoose;
 const celebritySchema = new Schema(
   {
     name: { type: String },
-    occupation: {
-      type: String,
-      enum: ["actor", "singer", "comedian", "unknown", "football player", "programmer"],
-    },
+    occupation: { type: String },
     catchPhrase: { type: String },
   },
   {

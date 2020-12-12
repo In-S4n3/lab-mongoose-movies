@@ -2,18 +2,28 @@
 
 <form action="/movies/add" method="POST">
   <label>
-    Title
+    Title:
     <input type="text" name="title">
   </label>
-   <label>
-    Genre
-    <input type="text" name="genre">
-  </label>
+  <br>
   <label>
-    Plot
+    Genre:
+    <input type="checkbox" name="genre" value="Horror"> Horror
+    <input type="checkbox" name="genre" value="Comedy"> Comedy
+    <input type="checkbox" name="genre" value="Drama"> Drama
+    <input type="checkbox" name="genre" value="Sci-fi"> Sci-fi
+    <input type="checkbox" name="genre" value="Action"> Action
+    <input type="checkbox" name="genre" value="Documentary"> Documentary
+    <input type="checkbox" name="genre" value="Romance"> Romance
+    <input type="checkbox" name="genre" value="Thriller"> Thriller
+    <input type="checkbox" name="genre" value="Fantasy"> Fantasy
+  </label>
+  <br>
+  <label>
+    Plot:
     <input name="plot">
   </label>
-  
+
   <button class="btn btn-success" type="submit">Submit</button>
 </form>
 
